@@ -11,7 +11,7 @@ critical_imports = {
     "pydantic": "Data validation",
     "jwt": "JWT token handling (PyJWT)",
     "passlib": "Password hashing",
-    "python_jose": "JWT utilities",
+    "jose": "JWT utilities (python_jose)",
     "pandas": "Data processing",
     "numpy": "Numerical computing",
     "scipy": "Scientific computing",
