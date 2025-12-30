@@ -45,7 +45,7 @@ reportlab==4.0.4
 # AI/ML (Lightweight)
 openai==1.3.7
 groq==0.4.1
-scikit-learn==1.3.0
+scikit-learn==1.3.2
 
 # Utils
 jsonschema==4.20.0
