@@ -2,17 +2,18 @@ services:
   - type: web
     name: autonomous-report-backend
     env: python
+    runtime: python-3.10
     repo: https://github.com/<your-org>/<your-repo>
     branch: main
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: gunicorn -w 2 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT main:app --timeout 120
     envVars:
       - key: SECRET_KEY
         sync: false
       - key: MONGODB_URI
         sync: false
       - key: MONGODB_DB_NAME
-        sync: false
+        value: "report_generator"
       - key: PYTHONUNBUFFERED
         value: "1"
       - key: CORS_ORIGINS
