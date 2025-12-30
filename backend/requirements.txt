@@ -1,6 +1,6 @@
 # ============================================================================
 # AUTONOMOUS REPORT GENERATOR BACKEND - REQUIREMENTS
-# Tested and verified for Python 3.11
+# Stable, pre-built packages only - No compilation needed
 # ============================================================================
 
 # Web Framework
@@ -20,39 +20,37 @@ python-multipart==0.0.6
 motor==3.3.2
 pymongo==4.5.0
 
-# Data Processing - Compatible versions
+# Data Processing
 pandas==2.1.3
 numpy==1.24.3
-scipy==1.10.1
 openpyxl==3.1.2
 
 # Environment Variables
 python-dotenv==1.0.0
 
-# File Handling & Async
+# File Handling & HTTP
 aiofiles==23.2.1
 requests==2.31.0
 
 # PDF Generation
 reportlab==4.0.4
 
-# Machine Learning & AI
+# Machine Learning
 scikit-learn==1.3.0
-prophet==1.1.0
 
-# OpenAI Integration
+# AI Integration
 openai==1.3.7
 
-# ========== LLAMA & GROQ INTEGRATION ==========
+# Groq API for LLaMA
 groq==0.4.1
 
-# Vector Embeddings (compatible with Python 3.10+)
-langchain==0.1.6
-sentence-transformers>=2.2.0
+# JSON Schema Validation
+jsonschema==4.20.0
 
-# Simplified vector store (optional, comment out if not needed)
-# chromadb==0.4.22
+# HTTP Client with async support
+httpx==0.25.1
 
-# Data Visualization
-plotly==5.15.0
+# Logging
+colorama==0.4.6
+
 
